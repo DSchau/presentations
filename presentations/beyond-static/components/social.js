@@ -63,7 +63,7 @@ export default function Social() {
           <ListItem><MdBusiness /> Gatsby</ListItem>
           <ListItem><FaHome /> Omaha, Nebraska</ListItem>
         </List>
-        <Image src="images/dustin-schau.png" />
+        <Image src="./images/dustin-schau.png" />
       </Row>
     </Container>
   )
