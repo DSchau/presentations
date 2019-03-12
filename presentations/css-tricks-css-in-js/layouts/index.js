@@ -1,6 +1,0 @@
-export * from 'mdx-deck/layouts'
-export { default as Background } from './background'
-export { default as Conclusion } from './conclusion'
-export { default as Code } from './code'
-export { default as Title } from './title'
-export { default as Vertical } from './vertical'
