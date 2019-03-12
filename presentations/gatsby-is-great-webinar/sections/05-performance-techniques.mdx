@@ -1,0 +1,53 @@
+import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+import { Emoji, Link, Pullquote } from '../components/'
+import { Background } from '../layouts'
+
+export default SectionInverted
+
+## Techniques for asserting your app is _actually_ 🔥
+
+---
+
+## Easiest is Chrome Audits / Lighthouse
+
+---
+
+## WebPageTest tends to be more real-world representative
+
+---
+
+<img alt="Screenshot of webpagetest, a tool used to more accurately reflect real-world performance" src="./assets/webpagetest.png" style={{ height: '100vh' }} />
+
+---
+
+## Automate as much as possible
+
+### Catch performance regressions at PR time!
+
+<Link href="https://github.com/DSchau/gatsby-perf-audit/pull/4">Quick Demo</Link>
+
+---
+
+## Performance isn't optional, it's _baked in_
+
+---
+
+## Poll Question
+
+<Emoji ariaLabel="Icon representing a poll" size={128} style={{ marginTop: '2rem' }}>📊</Emoji>
+
+---
+
+<Link href="https://gatsbyjs-org-prefetched.netlify.com/" large={true}>Demo</Link>
+
+---
+
+export default Background('rebeccapurple')
+
+<Pullquote cite="Smashing Magazine" href="https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/" fontSize={40}>One way or another, rather than focusing on full page loading time, prioritize page loading as perceived by your customers. That means focusing on a slightly different set of metrics. In fact, choosing the right metric is a process without obvious winners.</Pullquote>
+
+---
+
+export default Section
+
+# #buildWithGatsby

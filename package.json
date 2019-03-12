@@ -1,0 +1,21 @@
+{
+  "name": "@dschau/presentations",
+  "private": true,
+  "version": "1.0.0",
+  "main": "n/a",
+  "repository": "git@github.com:DSchau/presentations.git",
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "postbuild": "node scripts/copy.js",
+    "serve": "serve public -p 9000"
+  },
+  "workspaces": [
+    "presentations/*"
+  ],
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "serve": "^10.1.2"
+  }
+}
