@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Deck } from 'spectacle';
+import Prism from 'prismjs'
 import 'prismjs/components/prism-typescript';
 
 import createTheme from 'spectacle/lib/themes/default';
