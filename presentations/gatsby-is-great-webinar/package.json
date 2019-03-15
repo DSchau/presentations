@@ -18,7 +18,6 @@
     "style-loader": "^0.23.1"
   },
   "dependencies": {
-    "gatsby": "^2.0.96",
     "gatsby-mdx-theme": "^0.0.6",
     "lodash": "^4.17.11",
     "react-icons": "^3.3.0",
