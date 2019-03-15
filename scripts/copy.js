@@ -6,8 +6,8 @@ const destination = path.resolve('public')
 const getPublishDirectory = dependencies => {
   const lookup = {
     'mdx-deck': 'dist',
-    'spectacle': 'public',
-    'spectacle-scripts': 'public',
+    'spectacle': 'build',
+    'spectacle-scripts': 'build',
     undefined: 'dist'
   }
 
@@ -24,8 +24,6 @@ async function copy() {
 
       const { dependencies } = await fs.readJson(path.join(folder, 'package.json'))
       const publishDir = getPublishDirectory(dependencies)
-
-      console.log(publishDir)
 
       return fs.copy(
         path.join(folder, publishDir), 

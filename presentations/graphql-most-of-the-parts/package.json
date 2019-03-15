@@ -1,5 +1,5 @@
 {
-  "name": "graphql-presentation",
+  "name": "@dschau/graphql-most-of-the-parts",
   "author": "Dustin Schau <dustinschau@gmail.com> (https://dustinschau.com)",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +27,7 @@
     "globby": "~8.0.1",
     "sharp": "~0.20.1"
   },
+  "homepage": "https://dschau-presentations.netlify.com/graphql-most-of-the-parts",
   "browserslist": [
     ">0.2%",
     "not dead",
