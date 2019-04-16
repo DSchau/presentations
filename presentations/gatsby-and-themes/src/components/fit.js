@@ -1,6 +1,6 @@
 import React from 'react'
 import Textfit from 'react-textfit'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const Container = styled.div([], props => ({
   fontWeight: 'bold',

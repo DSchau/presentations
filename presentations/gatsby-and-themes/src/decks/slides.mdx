@@ -1,5 +1,11 @@
-import { Title } from '../layouts'
-import { Fit } from '../components'
+import { Background, Title } from '../layouts'
+import { Fit, Image, Social } from '../components'
+
+import reactBoilerPlateSrc from '../images/react-boilerplate.png'
+import reactSlingshotSrc from '../images/react-slingshot.png'
+import bananaBreadSrc from '../images/banana-bread.jpg'
+import breadSrc from '../images/ruisleipa.jpg'
+import danChurch from '../images/dan-church.png'
 
 <Title>
 
@@ -7,3 +13,89 @@ import { Fit } from '../components'
 <Fit style={{ color: 'white', backgroundColor: '#639', padding: '1rem 0' }} max={72}>The Future of Gatsby</Fit>
 
 </Title>
+
+---
+
+<Background background="#000" flexDirection="column">
+
+## `whoami`
+
+<Social />
+
+</Background>
+
+---
+
+> ... the internet kid in Nebraska
+
+---
+
+## It me 👋
+
+---
+
+## Let's take a trip down memory lane...
+
+---
+
+<Image src={reactBoilerPlateSrc} darken={0.5}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-boilerplate</Fit>
+</Image>
+
+---
+
+<Image src={reactSlingshotSrc} darken={0.5}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-slingshot</Fit>
+</Image>
+
+---
+
+## This... kind of sucked.
+
+---
+
+## Why?
+
+---
+
+<Image src={bananaBreadSrc} darken={0.5} />
+
+---
+
+## Gatsby Starters are equally bad for the exact same reasons.
+
+---
+
+## I don't want GD banana bread.
+
+### 🍌+ 🍞= 🙅‍♀️🙅‍♂️
+
+---
+
+## Oh sure, sure some people want bread out of a box.
+
+### But these people are wrong and I hate them.
+
+---
+
+<Image src={breadSrc} darken={0.5}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }} max={60}>Ruisleipä</Fit>
+</Image>
+
+---
+
+## But wait!
+
+---
+
+<Image src={danChurch} darken={0.5} />
+
+---
+
+## I think we can improve upon this.
+
+---
+
+## Introducing...
+
+<Fit>Gatsby Themes</Fit>

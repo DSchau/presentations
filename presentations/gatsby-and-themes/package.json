@@ -6,6 +6,8 @@
   "author": "Dustin Schau <dustin@gatsbyjs.com> (https://dustinschau.com)",
   "dependencies": {
     "@dschau/particles.js": "^2.0.0",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
     "@mdx-deck/gatsby-theme": "^2.2.1",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -13,15 +15,13 @@
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.32",
-    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-textfit": "^1.1.0",
-    "styled-components": "^4.2.0"
+    "react-textfit": "^1.1.0"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

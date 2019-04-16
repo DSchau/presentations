@@ -1,6 +1,6 @@
 import React from 'react'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const StyledTwitterEmbed = styled(TwitterTweetEmbed)`
   margin: 0 auto;

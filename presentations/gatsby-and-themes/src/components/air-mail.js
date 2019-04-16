@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const Airmail = styled.div([], {
   height: '12px',

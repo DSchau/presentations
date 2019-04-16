@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 import { Banner } from '../components'
 import { particles } from '../constants'
