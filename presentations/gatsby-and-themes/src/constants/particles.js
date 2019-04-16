@@ -1,23 +1,23 @@
 export default {
   "particles": {
     "number": {
-      "value": 150,
+      "value": 250,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 2500
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#639"
     },
     "shape": {
-      "type": "circle",
+      "type": "edge",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
         "src": "img/github.svg",
@@ -26,7 +26,7 @@ export default {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.85,
       "random": false,
       "anim": {
         "enable": false,
@@ -36,7 +36,7 @@ export default {
       }
     },
     "size": {
-      "value": 5,
+      "value": 60,
       "random": true,
       "anim": {
         "enable": false,
@@ -56,19 +56,14 @@ export default {
       "enable": true,
       "speed": 2,
       "direction": "top",
-      "random": false,
-      "straight": false,
+      "random": true,
+      "straight": true,
       "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
+      "bounce": false
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": false,
@@ -76,7 +71,7 @@ export default {
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },

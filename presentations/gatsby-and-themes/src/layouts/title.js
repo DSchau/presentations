@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import { Banner } from '../components'
-import { colors, particles } from '../constants'
+import { particles } from '../constants'
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: ${colors.gatsby};
+  background-color: white;
 
   height: 100vh;
   width: 100vw;
@@ -32,9 +32,18 @@ export default class Title extends Component {
 
   componentDidMount() {
     if (process.env.USE_PARTICLES !== false) {
+      const size = Math.floor(window.innerWidth / 20)
       import('@dschau/particles.js')
         .then(({ default: Particles }) => {
-          Particles(Title.containerId, particles)
+          Particles(Title.containerId, {
+            particles: {
+              ...particles.particles,
+              size: {
+                ...particles.particles.size,
+                size
+              }
+            }
+          })
         })
     }
   }
@@ -43,9 +52,9 @@ export default class Title extends Component {
     const { children } = this.props;
     return (
       <Container>
-        <Banner twitter={true} />
+        <Banner twitter={true} style={{ zIndex: 2 }} />
+        <div style={{ zIndex: 2 }}>{children}</div>
         <ParticlesContainer id={Title.containerId} />
-        {children}
       </Container>
     )
   }

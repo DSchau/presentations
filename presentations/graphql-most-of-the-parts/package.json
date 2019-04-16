@@ -8,8 +8,8 @@
     "lodash.kebabcase": "~4.1.1",
     "marked": "~0.6.1",
     "prismjs": "1.15.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-icons": "^2.0.0",
     "react-player": "~1.9.3",
     "spectacle-scripts": "2.3.0"
