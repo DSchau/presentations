@@ -1,16 +1,10 @@
 import { Background, Title } from '../layouts'
-import { ReactFinland, Fit, Image, Social } from '../components'
-
-import reactBoilerPlateSrc from '../images/react-boilerplate.png'
-import reactSlingshotSrc from '../images/react-slingshot.png'
-import bananaBreadSrc from '../images/banana-bread.jpg'
-import breadSrc from '../images/ruisleipa.jpg'
-import danChurch from '../images/dan-church.png'
+import { AttributedImage, ReactFinland, Fit, Image, Social } from '../components'
 
 <Title>
   <h1 style={{ backgroundColor: 'black', color: 'white', margin: 0 }}>Gatsby + Themes</h1>
   <h2 style={{ color: 'white', backgroundColor: '#639', margin: 0 }}>The Future of Gatsby</h2>
-  <span style={{ position: 'fixed', top: 0, right: 0 }}>
+  <span style={{ position: 'fixed', top: 10, right: 0 }}>
     <ReactFinland fill="#000" height={60} />
   </span>
 </Title>
@@ -31,13 +25,13 @@ import danChurch from '../images/dan-church.png'
 
 ---
 
-<Image src={reactBoilerPlateSrc} darken={0.5}>
+<Image src="/images/react-boilerplate.png" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-boilerplate</Fit>
 </Image>
 
 ---
 
-<Image src={reactSlingshotSrc} darken={0.5}>
+<Image src="/images/react-slingshot.png" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-slingshot</Fit>
 </Image>
 
@@ -51,7 +45,11 @@ import danChurch from '../images/dan-church.png'
 
 ---
 
-<Image src={bananaBreadSrc} darken={0.5} />
+<Image src="/images/yellow-house.jpg" darken={0.5} />
+
+---
+
+<AttributedImage src="/images/atomic-design.png" cite={`"Atomic Design" by Brad Frost`} />
 
 ---
 
@@ -59,29 +57,12 @@ import danChurch from '../images/dan-church.png'
 
 ---
 
-## I don't want GD banana bread.
-
-### 🍌+ 🍞= 🙅‍♀️🙅‍♂️
-
----
-
-## Oh sure, sure some people want bread out of a box.
-
-### But these people are wrong and I hate them.
-
----
-
-<Image src={breadSrc} darken={0.5}>
-  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }} max={60}>Ruisleipä</Fit>
-</Image>
-
----
 
 ## But wait!
 
 ---
 
-<Image src={danChurch} darken={0.5} />
+<Image src="/images/dan-church.png" darken={0.5} />
 
 ---
 

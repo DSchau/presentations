@@ -3,8 +3,6 @@ import styled from '@emotion/styled'
 import { FaGlobe, FaGithub, FaTwitter, FaHome } from 'react-icons/fa'
 import { MdBusiness } from 'react-icons/md'
 
-import Me from '../images/dustin-schau.png'
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,7 +66,7 @@ export default function Social() {
           <ListItem><MdBusiness /> Gatsby</ListItem>
           <ListItem><FaHome /> Omaha, Nebraska</ListItem>
         </List>
-        <Image src={Me} />
+        <Image src="/images/dustin-schau.png" />
       </Row>
     </Container>
   )

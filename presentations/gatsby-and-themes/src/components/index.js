@@ -1,6 +1,6 @@
 export * from 'mdx-deck/dist/components'
 
-export { default as Airmail } from './air-mail'
+export { default as AttributedImage } from './attributed-image'
 export { default as Banner } from './banner'
 export { default as Box } from './box'
 export { default as Fit } from './fit'
