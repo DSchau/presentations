@@ -53,7 +53,7 @@ export default class Title extends Component {
     return (
       <Container>
         <Banner twitter={true} style={{ zIndex: 2 }} />
-        <div style={{ zIndex: 2 }}>{children}</div>
+        <div style={{ zIndex: 2, position: `relative` }}>{children}</div>
         <ParticlesContainer id={Title.containerId} />
       </Container>
     )

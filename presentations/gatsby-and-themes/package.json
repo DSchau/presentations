@@ -32,8 +32,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "npm run optimize && npm run build:pdf",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "preoptimize": "mkdir -p dist/images",
+    "optimize": "if-env NETLIFY=true && find images -type f -exec ./node_modules/.bin/sharp -i '{}' -o dist/'{}' --quality 70 \\; || cp -r images dist",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

@@ -45,8 +45,11 @@ const Image = styled.img`
 `;
 
 const Link = styled.a`
-  color: inherit;
   text-decoration: none;
+
+  && {
+    color: inherit;
+  }
 `
 
 Link.defaultProps = {

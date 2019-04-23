@@ -1,5 +1,5 @@
 import { Background, Title } from '../layouts'
-import { Fit, Image, Social } from '../components'
+import { ReactFinland, Fit, Image, Social } from '../components'
 
 import reactBoilerPlateSrc from '../images/react-boilerplate.png'
 import reactSlingshotSrc from '../images/react-slingshot.png'
@@ -8,10 +8,11 @@ import breadSrc from '../images/ruisleipa.jpg'
 import danChurch from '../images/dan-church.png'
 
 <Title>
-
-<Fit caps={true} style={{ backgroundColor: 'black', color: 'white', padding: '2rem 0' }}>Gatsby + Themes</Fit>
-<Fit style={{ color: 'white', backgroundColor: '#639', padding: '1rem 0' }} max={72}>The Future of Gatsby</Fit>
-
+  <h1 style={{ backgroundColor: 'black', color: 'white', margin: 0 }}>Gatsby + Themes</h1>
+  <h2 style={{ color: 'white', backgroundColor: '#639', margin: 0 }}>The Future of Gatsby</h2>
+  <span style={{ position: 'fixed', top: 0, right: 0 }}>
+    <ReactFinland fill="#000" height={60} />
+  </span>
 </Title>
 
 ---
@@ -23,14 +24,6 @@ import danChurch from '../images/dan-church.png'
 <Social />
 
 </Background>
-
----
-
-> ... the internet kid in Nebraska
-
----
-
-## It me 👋
 
 ---
 
