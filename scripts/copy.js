@@ -6,6 +6,7 @@ const destination = path.resolve('public')
 const getPublishDirectory = dependencies => {
   const lookup = {
     'mdx-deck': 'dist',
+    'gatsby': 'public',
     'spectacle': 'build',
     'spectacle-scripts': 'build',
     undefined: 'dist'
