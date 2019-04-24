@@ -1,8 +1,8 @@
 import React from 'react'
 
 const SvgComponent = props => (
-  <svg width={140} height={126} viewBox="0 0 10 126" preserveAspectRatio="xMidYMid meet" {...props}>
-    <title>{'logo'}</title>
+  <svg width={140} height={126} viewBox="0 0 140 126" preserveAspectRatio="xMidYMid meet" {...props}>
+    <title>React Finland Logo</title>
     <g transform="translate(261 286)" fill={props.fill}>
       <use xlinkHref="#prefix__a" transform="translate(-261 -286)" />
       <use xlinkHref="#prefix__b" transform="translate(-205 -233)" />

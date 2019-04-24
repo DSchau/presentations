@@ -2,9 +2,15 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 
-import Fit from './fit'
-
 const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+
   ${props => css`
     background-color: ${props.background};
     color: ${props.color};
@@ -12,5 +18,5 @@ const Container = styled.div`
 `
 
 export default function Box({ children, ...rest }) {
-  return <Container {...rest}><Fit max={72}>{children}</Fit></Container>
+  return <Container {...rest}>{children}</Container>
 }

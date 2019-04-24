@@ -33,8 +33,9 @@ export default class extends React.Component {
 
   }
   render() {
+    const { id, tweetId = id } = this.props
     return (
-      <StyledTwitterEmbed {...this.props} />
+      <StyledTwitterEmbed tweetId={tweetId} {...this.props} />
     )
   }
 }
