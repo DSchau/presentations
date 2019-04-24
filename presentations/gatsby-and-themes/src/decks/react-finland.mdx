@@ -1,0 +1,306 @@
+import { Background, FullScreenCode, Invert, Title } from '../layouts'
+import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, TweetEmbed } from '../components'
+
+<Title>
+  <span style={{ position: 'fixed', top: '1rem', left: '50%', transform: 'translateX(-50%)' }}>
+    <h4 style={{ margin: 0, textAlign: 'center', fontSize: 40, color: '#639', padding: '0.25rem 0.5rem', backgroundColor: 'rgba(255, 255, 255, 0.85)', border: '4px solid #639' }}>Dustin Schau</h4>
+  </span>
+  <h1 style={{ backgroundColor: 'black', color: 'white', margin: 0, fontSize: '10vw', padding: '1rem' }}>Gatsby + Themes</h1>
+  <h2 style={{ color: 'white', backgroundColor: '#639', margin: 0 }}>The Future of Gatsby</h2>
+  <Link style={{ position: 'fixed', top: 10, right: 0 }} href="https://react-finland.fi">
+    <ReactFinland fill="#000" height={60} />
+  </Link>
+</Title>
+
+---
+
+<Background background="#000" flexDirection="column">
+
+## `whoami`
+
+<Social />
+
+</Background>
+
+---
+
+<Background background="#663399">
+
+  <img src="/images/gatsby-logo-inverted.png" alt="Gatsby logo" style={{ maxHeight: '40vh' }} />
+
+</Background>
+
+---
+
+<Background background="#663399" flexDirection="column">
+  <h2 style={{ margin: 0 }}>A static <span style={{ fontWeight: 800, fontStyle: 'italic' }}>app</span> generator for React</h2>
+  <h3 style={{ margin: 0 }}>Fast in <span style={{ fontWeight: 800, fontStyle: 'italic' }}>every</span> way that matters.</h3>
+</Background>
+
+---
+
+<Background background="#663399">
+
+  <img src="/images/kent-tweet.png" style={{ maxHeight: '25vh' }} />
+
+</Background>
+
+---
+
+<Background background="#663399">
+
+  <img src="/images/dan-tweet.png" style={{ maxHeight: '50vh' }} />
+
+  <span style={{ position: `fixed`, bottom: 8, left: '50%', transform: 'translateX(-50%)' }}>
+    <p style={{ margin: 0, fontSize: 14 }}>also fight me dan 😜</p>
+  </span>
+
+</Background>
+
+---
+
+## Alright, alright...
+
+## 🙅‍♀️
+
+### Enough already!
+
+---
+
+## Let's take a trip down memory lane...
+
+---
+
+<Image src="/images/react-boilerplate.png" alt="React Boilerplate on Github" darken={0.5}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-boilerplate</Fit>
+</Image>
+
+---
+
+<Image src="/images/react-slingshot.png" alt="React Slingshot on Github" darken={0.5}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-slingshot</Fit>
+</Image>
+
+---
+
+## This... kind of sucked.
+
+---
+
+## Why?
+
+---
+
+<Fit>We are <span style={{ textDecoration: `underline` }}>builders</span>.</Fit>
+
+---
+
+<Image src="/images/legos.jpg" alt="Assortment of legos representing building blocks" darken={0.5}>
+  <img src="/images/legos-tweet.png" style={{ maxHeight: '25vh' }} />
+</Image>
+
+---
+
+<Image src="/images/yellow-house.jpg" alt="Yellow lego house representing issue with cloning boilerplates" darken={0.5} />
+
+---
+
+<Fit>Gatsby Starters are equally bad for the exact same reasons.</Fit>
+
+---
+
+<div>
+  <h2 style={{ margin: 0 }}>Introducing&hellip;</h2>
+  <Fit style={{ margin: 0, backgroundColor: 'rebeccapurple', color: `white` }} caps={true}>Gatsby Themes</Fit>
+</div>
+
+---
+
+## What is a theme?
+
+---
+
+## A reusable block of a Gatsby site
+
+---
+
+## These blocks can be:
+
+<Grid cols={3} style={{ height: '100%' }}>
+  <Box background="black" color="white">shared</Box>
+  <Box background="black" color="white">extended</Box>
+  <Box background="black" color="white">customized</Box>
+</Grid>
+
+---
+
+## These blocks can be:
+
+<Grid cols={3} style={{ height: '100%' }}>
+  {
+    [
+      'purely data driven',
+      'purely UI driven',
+      'some combination of both'
+    ]
+      .map(phrase => (
+        <Box background="black" color="white" key={phrase}>{phrase}</Box>
+      ))
+  }
+</Grid>
+
+---
+
+## That has answered nothing, Dustin.
+
+---
+
+<img src="/images/gatsby-site.png" style={{ maxHeight: '70vh' }} />
+
+---
+
+<img src="/images/gatsby-themes-site.png" style={{ maxHeight: '70vh' }} />
+
+---
+
+<Fit>Use cases</Fit>
+
+---
+
+<Fit caps={true} style={{ padding: `2rem 0`, border: `8px solid black`, borderRightWidth: 0, borderLeftWidth: 0 }}>Anything</Fit>
+<Fit>you need in an app (which is everything)</Fit>
+
+---
+
+<Fit>Blogs</Fit>
+
+---
+
+<AttributedImage src="/images/static-blog-3-posts.jpg" cite="Mark Dalgleish" backgroundSize="contain" />
+
+---
+
+<Fit>Documentation</Fit>
+
+---
+
+1. `npm i @docz/gatsby-theme`
+1. add Markdown to `content` folder
+1. ...
+1. 🤑
+
+---
+
+## TODO: Show Docz
+
+---
+
+<Fit>Functional</Fit>
+
+---
+
+## eCommerce
+
+---
+
+## Adding search
+
+---
+
+<Fit>User Interface</Fit>
+
+---
+
+## Navigation
+
+
+---
+
+## Design system(s)
+
+---
+
+## Oh... and these slides 😎
+
+```shell
+npm i @mdx-deck/gatsby-theme
+```
+
+---
+
+<AttributedImage src="/images/atomic-design.png" alt="Atomic Design by Brad Frost" cite={`"Atomic Design" by Brad Frost`} />
+
+---
+
+<Fit>Gatsby Themes encapsulate</Fit>
+<Fit caps={true} style={{ paddinng: `1rem 0`, border: `8px solid black`, borderLeftWidth: 0, borderRightWidth: 0 }}>all of these</Fit>
+
+
+---
+
+<Grid cols={3}>
+  {
+    [
+      '/images/block.png',
+      '/images/theme.png',
+      '/images/app.png'
+    ]
+      .map(img => (
+        <img alt={img.split('/').pop().split('.').shift()} key={img} src={img} style={{ maxHeight: '30vw' }} />
+      ))
+  }
+</Grid>
+
+---
+
+<Fit>When? <span ariaLabel="timer representing time until ready">⏲️</span></Fit>
+
+---
+
+## Exposed behind a flag
+
+### `__experimentalThemes` in `gatsby-config.js`
+
+---
+
+<Fit>👶 ➡️ 👧 ➡️ 👱‍♀️ ➡️ 👵</Fit>
+
+---
+
+## Themes are...
+
+<Fit><span ariaLabel="Young girl representing a toddler">👧</span></Fit>
+
+---
+
+<Fit>Talk is cheap.</Fit>
+<Fit caps={true} style={{ backgroundColor: `black`, color: 'white' }}>Demo</Fit>
+
+---
+
+<Fit caps={true}>Themes constitute an</Fit>
+<Fit caps={true} style={{ fontWeight: 900, backgroundColor: 'rebeccapurple', color: 'white' }}>evolutionary leap</Fit>
+<Fit caps={true}>for Gatsby</Fit>
+
+---
+
+<Image src="/images/building-legos.jpg" alt="Building legos to represent building new themes with Gatsby" darken={0.75}>
+  <Fit style={{ color: `white` }}>We can't wait</Fit>
+  <Fit style={{ color: `white` }}>to see what <em>you</em> build.</Fit>
+</Image>
+
+---
+
+<Background background="#663399" flexDirection="column">
+  <Fit>#buildWithGatsby</Fit>
+</Background>
+
+---
+
+<Fit>Thank you!</Fit>
+
+<ReactFinland fill="black" />
+
+---
+
+## 🙏 Shout out to all the amazing people building themes 🙏

@@ -9,6 +9,8 @@ const StyledImage = styled(Image)`
   align-items: center;
   justify-content: center;
   position: relative;
+
+  background-size: ${props => props.backgroundSize};
 `
 
 const Darken = styled.div`
